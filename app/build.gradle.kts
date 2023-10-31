@@ -13,7 +13,7 @@ android {
     defaultConfig {
         applicationId = "kh.edu.rupp.ite.let_trip_project"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -38,7 +38,6 @@ android {
     }
 }
 kapt {
-    var correctErrorTypes = true
 }
 
 dependencies {
