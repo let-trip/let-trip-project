@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#1BA169"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <View
+        android:id="@+id/vector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/destination"
+        android:layout_width="88dp"
+        android:layout_height="21dp"
+        android:textAlignment="center"
+        android:text="@string/destination"
+        android:textAppearance="@style/destination"
+        android:gravity="center_horizontal|top"
+        tools:ignore="MissingConstraints" />
+    <!--
+      Font family: Poppins
+      Line height: 21sp
+      (identical to box height)
+      -->
+
+
+
+    <!-- strings.xml -->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
