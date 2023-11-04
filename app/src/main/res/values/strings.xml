@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">let-trip-project</string>
+    <string name="titleToolBar">Let's Trip</string>
 </resources>
