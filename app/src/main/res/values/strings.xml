@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">let-trip-project</string>
+    <!-- styles.xml -->
+    <style name="destination">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <string name="destination">
+        Destinations
+    </string>
+
+    <string name="visit_angko">
+Visit ANGKOR WAT
+</string>
+
+    <string name="koh_norea_i">
+Koh Norea Island
+</string>
+
+    <string name="km_away">
+7.2 km away
+</string>
+    <string name="siem_reap_c">
+Siem Reap, Cambodia
+</string>
+
+    <string name="the_archite">
+The architecture and layout of the successive capitals bear witness to a high level of social order and ranking within the Khmer Empire. Angkor is therefore a major site exemplifying cultural, religious and symbolic values, as well as containing high architectural, archaeological and artistic significance.
+</string>
 </resources>
