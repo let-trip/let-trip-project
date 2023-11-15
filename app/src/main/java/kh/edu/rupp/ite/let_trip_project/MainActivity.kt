@@ -2,10 +2,11 @@ package kh.edu.rupp.ite.let_trip_project
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kh.edu.rupp.ite.let_trip_project.R.layout.activity_destination
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(activity_destination)
     }
 }
