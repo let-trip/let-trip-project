@@ -45,4 +45,7 @@ The architecture and layout of the successive capitals bear witness to a high le
     <string name="embark_on_y">
         Embark on Your \nWorld Adventure : \nDiscover, Explore, \nUnwind!
     </string>
+
+    <string name="welcome">Welcome to Let’s Trip</string>
+    <string name="explor_signup">Explore The World With Every Step of the Way!</string>
 </resources>
