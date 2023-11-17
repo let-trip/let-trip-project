@@ -29,4 +29,20 @@ Siem Reap, Cambodia
     <string name="the_archite">
 The architecture and layout of the successive capitals bear witness to a high level of social order and ranking within the Khmer Empire. Angkor is therefore a major site exemplifying cultural, religious and symbolic values, as well as containing high architectural, archaeological and artistic significance.
 </string>
+
+    <string name="titleToolBar">Home</string>
+
+    <string name="embark">Embark </string>
+    <string name="on_your">on Your</string>
+    <string name="world">World</string>
+    <string name="adventure">Adventure :</string>
+    <string name="discover">Discover, </string>
+    <string name="explore">Explore,</string>
+    <string name="unwind">Unwind!</string>
+    <string name="explore_btn">Explore</string>
+
+    <!-- strings.xml -->
+    <string name="embark_on_y">
+        Embark on Your \nWorld Adventure : \nDiscover, Explore, \nUnwind!
+    </string>
 </resources>
