@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <ImageView
+        android:paddingTop="55dp"
+        android:paddingStart="20sp"
+        android:paddingEnd="20dp"
+        android:id="@+id/green_bg_signup"
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:background="#1BA169"
+        android:src="@drawable/onboard_background"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:text="@string/welcome"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/explor_signup"/>
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_marginTop="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:paddingStart="20dp"
+                android:hint="Enter your email here"
+                android:background="@drawable/signup_input"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_marginTop="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:paddingStart="20dp"
+                android:hint="Enter your password here"
+                android:background="@drawable/signup_input"/>
+        </LinearLayout>
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="290dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_btn"
+            android:backgroundTint="@color/default_color"
+            android:text="Login"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="transparent"
+            android:text="Don't have an account yet ? \nRegister Now"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
