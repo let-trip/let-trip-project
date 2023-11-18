@@ -9,9 +9,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/logo_app_m"
+        android:icon="@drawable/logo_icon"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logo_app_l"
+        android:roundIcon="@drawable/logo_splash"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lettripproject"
         tools:targetApi="31">
