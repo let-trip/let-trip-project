@@ -112,7 +112,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="transparent"
+            android:background="@android:color/transparent"
             android:text="Already have an account ?\n Login Now"
             android:textColor="@color/black"/>
     </LinearLayout>
