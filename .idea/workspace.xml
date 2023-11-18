@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04b144de-3433-4d51-a436-bb742bb43f60" name="Changes" comment="Add logo and splash screen" />
+    <list default="true" id="04b144de-3433-4d51-a436-bb742bb43f60" name="Changes" comment="Add logo and splash screen">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,11 +67,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
         <option value="resourceFile" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -109,6 +114,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;android-custom-viewC:/Users/Huoyly/MyApplication_2/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.6.1/ace9a78b961165396147e8691faa18c1b0e48e20/appcompat-1.6.1-sources.jar!/androidx/appcompat/widget/AppCompatImageView.java_SELECTED&quot;: &quot;AppCompatImageView&quot;,
+    &quot;android-custom-viewC:/Users/Huoyly/MyApplication_2/caches/modules-2/files-2.1/com.google.android.material/material/1.10.0/93873f2a41da69e38213dbe9ed91a0402a903c88/material-1.10.0-sources.jar!/com/google/android/material/appbar/MaterialToolbar.java_SELECTED&quot;: &quot;MaterialToolbar&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Royal_University_of_Phnom_Penh/ITE(Year4)/Mobile Application Development/let-trip-project/app/src/main/res/values&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDK Location&quot;,
@@ -123,6 +129,14 @@
       <recent name="D:\Royal_University_of_Phnom_Penh\ITE(Year4)\Mobile Application Development\let-trip-project\app\src\main\res\values" />
       <recent name="D:\Royal_University_of_Phnom_Penh\ITE(Year4)\Mobile Application Development\let-trip-project\app\src\main\res" />
       <recent name="D:\Royal_University_of_Phnom_Penh\ITE(Year4)\Mobile Application Development\let-trip-project\app\src\main\res\values\color" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Royal_University_of_Phnom_Penh\ITE(Year4)\Mobile Application Development\let-trip-project\app\src\main\java\kh\edu\rupp\ite\let_trip_project\homeScreen\adapter" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="kh.edu.rupp.ite.let_trip_project.retrofit" />
+      <recent name="kh.edu.rupp.ite.let_trip_project.ui.Fragment" />
+      <recent name="kh.edu.rupp.ite.let_trip_project.ui.Activity" />
     </key>
   </component>
   <component name="RunManager">
