@@ -18,6 +18,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -39,6 +40,8 @@ android {
 }
 kapt {
 }
+
+
 
 dependencies {
 
@@ -68,6 +71,8 @@ dependencies {
     //Retrofit2
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
 
 }
 

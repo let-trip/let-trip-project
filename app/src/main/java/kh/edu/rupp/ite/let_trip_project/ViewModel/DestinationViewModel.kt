@@ -11,7 +11,7 @@ import kotlinx.coroutines.launch
 class DestinationViewModel(private val repository: DestinationRepo) : ViewModel() {
 
     private val _myModel = MutableLiveData<DestinationModel>()
-    val myModel: LiveData<DestinationModel> get() = _myModel
+    val destinationModel: LiveData<DestinationModel> get() = _myModel
 
     fun fetchData() {
         viewModelScope.launch {
