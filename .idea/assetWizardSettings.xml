@@ -5,14 +5,34 @@
       <map>
         <entry key="imageWizard">
           <value>
+<<<<<<< HEAD
+            <PersistentState />
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState>
+              <option name="children">
+                <map>
+                  <entry key="vectorAssetStep">
+=======
             <PersistentState>
               <option name="children">
                 <map>
                   <entry key="imageAssetPanel">
+>>>>>>> 27c0fe7234e7a7dd52bcde05fa0c587c359c9124
                     <value>
                       <PersistentState>
                         <option name="children">
                           <map>
+<<<<<<< HEAD
+                            <entry key="clipartAsset">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/location_on/baseline_location_on_24.xml" />
+=======
                             <entry key="actionbar">
                               <value>
                                 <PersistentState>
@@ -287,11 +307,21 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+>>>>>>> 27c0fe7234e7a7dd52bcde05fa0c587c359c9124
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
+<<<<<<< HEAD
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="color" value="072540" />
+                            <entry key="outputName" value="baseline_location_on_24" />
+=======
+>>>>>>> 27c0fe7234e7a7dd52bcde05fa0c587c359c9124
                           </map>
                         </option>
                       </PersistentState>
