@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.let_trip_project
+package kh.edu.rupp.ite.let_trip_project.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
