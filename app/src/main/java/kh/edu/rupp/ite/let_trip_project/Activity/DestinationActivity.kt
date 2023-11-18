@@ -1,15 +1,16 @@
 package kh.edu.rupp.ite.let_trip_project.Activity
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import com.example.mvvmexample.databinding.ActivityMainBinding
 import kh.edu.rupp.ite.let_trip_project.ViewModel.DestinationViewModel
+import kh.edu.rupp.ite.let_trip_project.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class DestinationActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val viewModel: DestinationViewModel by viewModel()
+    private val viewModel: DestinationViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,12 +19,12 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.destinationModel.observe(this, Observer { myModel ->
             // Update UI with the data
-            binding.titleTextView.text = myModel.title
-            binding.descriptionTextView.text = myModel.description
+            binding.toolbar.title = myModel.title;
+            // Assuming 'titleTextView' is the ID of the TextView in your layout
         })
 
-        binding.fetchDataButton.setOnClickListener {
-            viewModel.fetchData()
-        }
+//        binding.fetchDataButton.setOnClickListener {
+//            viewModel.fetchData()
+//        }
     }
 }
