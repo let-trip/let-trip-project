@@ -1,8 +1,52 @@
 <resources>
     <string name="app_name">let-trip-project</string>
-    <string name="titleToolBar">Let\'s Trip</string>
-    <string name="categories">Categories</string>
-    <string name="view_all">View all</string>
-    <string name="near_you">Near You</string>
-    <string name="popular_destination">Popular Destination</string>
+    <!-- styles.xml -->
+    <style name="destination">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <string name="destination">
+        Destinations
+    </string>
+
+    <string name="visit_angko">
+Visit ANGKOR WAT
+</string>
+
+    <string name="koh_norea_i">
+Koh Norea Island
+</string>
+
+    <string name="km_away">
+7.2 km away
+</string>
+    <string name="siem_reap_c">
+Siem Reap, Cambodia
+</string>
+
+    <string name="the_archite">
+The architecture and layout of the successive capitals bear witness to a high level of social order and ranking within the Khmer Empire. Angkor is therefore a major site exemplifying cultural, religious and symbolic values, as well as containing high architectural, archaeological and artistic significance.
+</string>
+
+    <string name="titleToolBar">Home</string>
+
+    <string name="embark">Embark </string>
+    <string name="on_your">on Your</string>
+    <string name="world">World</string>
+    <string name="adventure">Adventure :</string>
+    <string name="discover">Discover, </string>
+    <string name="explore">Explore,</string>
+    <string name="unwind">Unwind!</string>
+    <string name="explore_btn">Explore</string>
+
+    <!-- strings.xml -->
+    <string name="embark_on_y">
+        Embark on Your \nWorld Adventure : \nDiscover, Explore, \nUnwind!
+    </string>
+
+    <string name="welcome">Welcome to Let’s Trip</string>
+    <string name="explor_signup">Explore The World With Every Step of the Way!</string>
+>>>>>>> cf0cbf6b905cf80c0a972b0378e171605beba98e
 </resources>

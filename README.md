@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 ### Lets Trip App
+=======
+# let-trip-project
+
+# Lets Trip App
+>>>>>>> cf0cbf6b905cf80c0a972b0378e171605beba98e
 Let's Trip is an Android app designed for people searching for holiday, vacation, or leisure destinations, all of which are located in Cambodia.
 
 ### Why we create
