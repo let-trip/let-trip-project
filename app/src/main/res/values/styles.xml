@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="stylesItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:radius">8dp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
     <style name="visit_angko">
         <item name="android:textSize">13sp</item>
         <item name="android:letterSpacing">0.02</item>
@@ -33,12 +42,5 @@ Angkor Wat Temple
     <style name="the_archite">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#666666</item>
-    </style>
-
-
-    <!-- styles.xml -->
-    <style name="embark_on_y">
-        <item name="android:textSize">35sp</item>
-        <item name="android:textColor">#000000</item>
     </style>
 </resources>

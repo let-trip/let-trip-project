@@ -5,4 +5,5 @@
     <color name="header_color">#333333</color>
     <color name="description_color">#666666</color>
     <color name="default_color">#2BA169</color>
+    <color name="skeleton_color">#E2E3EA</color>
 </resources>
