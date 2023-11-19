@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/let-trip-project.iml" filepath="$PROJECT_DIR$/.idea/modules/let-trip-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mobile Application Development.let-trip-project.iml" filepath="$PROJECT_DIR$/.idea/modules/Mobile Application Development.let-trip-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/let-trip-project.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/let-trip-project.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/let-trip-project.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/let-trip-project.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/let-trip-project.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/let-trip-project.app.main.iml" />
