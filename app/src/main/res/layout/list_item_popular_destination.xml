@@ -2,8 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    android:layout_margin="12dp">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="12dp"
+    android:layout_marginTop="20dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +17,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/categories"/>
+                android:text="@string/popular_destination"/>
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
@@ -38,17 +39,17 @@
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_categories"
+                    android:background="@drawable/bg_popular_destination"
                     android:layout_marginRight="12dp"/>
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_categories"
+                    android:background="@drawable/bg_popular_destination"
                     android:layout_marginRight="12dp"/>
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_categories"
+                    android:background="@drawable/bg_popular_destination"
                     android:layout_marginRight="12dp"/>
 
             </LinearLayout>
@@ -56,4 +57,5 @@
         </HorizontalScrollView>
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
