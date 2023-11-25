@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:width="220dp" android:height="160dp"/>
+    <corners android:radius="10.667dp"/>
+    <solid android:color="@color/skeleton_color"/>
+</shape>
