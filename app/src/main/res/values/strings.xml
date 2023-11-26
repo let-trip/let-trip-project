@@ -48,5 +48,9 @@ The architecture and layout of the successive capitals bear witness to a high le
 
     <string name="welcome">Welcome to Let’s Trip</string>
     <string name="explor_signup">Explore The World With Every Step of the Way!</string>
->>>>>>> cf0cbf6b905cf80c0a972b0378e171605beba98e
+    <string name="categories">Category</string>
+    <string name="view_all">View All</string>
+    <string name="near_you">Near You</string>
+    <string name="popular_destination">Popular Destination</string>
+    >>>>>>> cf0cbf6b905cf80c0a972b0378e171605beba98e
 </resources>

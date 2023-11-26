@@ -1,22 +1,33 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id ("kotlin-kapt")
-    id ("com.google.dagger.hilt.android")
+//    id ("kotlin-kapt")
+//    id ("com.google.dagger.hilt.android")
     id ("kotlin-parcelize")
 }
 
 android {
     namespace = "kh.edu.rupp.ite.let_trip_project"
     compileSdk = 34
+    packagingOptions {
+        exclude ("META-INF/AL2.0")
+        exclude ("META-INF/LGPL2.1")
+        exclude ("xsd/catalog.xml")
+        exclude ("META-INF/DEPENDENCIES")
+        exclude ("META-INF/LICENSE.md")
+        exclude ("META-INF/NOTICE.md")
+        exclude ("META-INF/META-INF/io.netty.versions.properties")
+        exclude ("META-INF/io.netty.versions.properties")
+        exclude ("META-INF/INDEX.LIST")
 
+    }
     defaultConfig {
         applicationId = "kh.edu.rupp.ite.let_trip_project"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
+        multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         viewBinding {
             enable = true
@@ -48,8 +59,8 @@ android {
         kotlinCompilerExtensionVersion = "1.5.4"
     }
 }
-kapt {
-}
+//kapt {
+//}
 
 
 
@@ -75,14 +86,12 @@ dependencies {
 
 
     //Hilt dependency injection
-    implementation ("com.google.dagger:hilt-android:2.44.2")
-    kapt ("com.google.dagger:hilt-compiler:2.47")
-
+//    implementation ("com.google.dagger:hilt-android:2.44.2")
+//    kapt ("com.google.dagger:hilt-compiler:2.47")
     implementation ("androidx.activity:activity-ktx:1.8.1")
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-
-
-    implementation ("com.android.tools.build:gradle:7.1.0")
+    implementation ("com.android.tools.build:gradle:7.1.0") {
+        exclude(group = "jakarta.activation", module = "jakarta.activation-api")
+    }
 
 }
 
