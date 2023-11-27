@@ -1,8 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-//    id ("kotlin-kapt")
-//    id ("com.google.dagger.hilt.android")
+    id ("kotlin-kapt")
+    id ("com.google.dagger.hilt.android")
     id ("kotlin-parcelize")
 }
 
@@ -59,8 +59,9 @@ android {
         kotlinCompilerExtensionVersion = "1.5.4"
     }
 }
-//kapt {
-//}
+kapt {
+    correctErrorTypes = true
+}
 
 
 
@@ -86,12 +87,15 @@ dependencies {
 
 
     //Hilt dependency injection
-//    implementation ("com.google.dagger:hilt-android:2.44.2")
-//    kapt ("com.google.dagger:hilt-compiler:2.47")
+    implementation ("com.google.dagger:hilt-android:2.44.2")
+    kapt ("com.google.dagger:hilt-compiler:2.47")
     implementation ("androidx.activity:activity-ktx:1.8.1")
     implementation ("com.android.tools.build:gradle:7.1.0") {
         exclude(group = "jakarta.activation", module = "jakarta.activation-api")
     }
+    //For easy logging
+    implementation ("com.jakewharton.timber:timber:5.0.1")
+
 
 }
 
