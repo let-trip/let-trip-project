@@ -129,7 +129,8 @@
             android:text="@string/angkor_wat_"
             android:textAppearance="@style/primary_style"
             tools:layout_editor_absoluteX="53dp"
-            tools:layout_editor_absoluteY="275dp" />
+            tools:layout_editor_absoluteY="275dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/txt_about"
@@ -141,7 +142,8 @@
             android:text="About"
             android:textAppearance="@style/primary_style"
             tools:layout_editor_absoluteX="52dp"
-            tools:layout_editor_absoluteY="337dp" />
+            tools:layout_editor_absoluteY="337dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/txt_gallery"
@@ -153,7 +155,8 @@
             android:text="Gallery"
             android:textAppearance="@style/primary_style"
             tools:layout_editor_absoluteX="52dp"
-            tools:layout_editor_absoluteY="517dp" />
+            tools:layout_editor_absoluteY="517dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/txt_location"
@@ -165,7 +168,8 @@
             android:text="@string/siem_reap_c"
             android:textAppearance="@style/txt_location"
             tools:layout_editor_absoluteX="68dp"
-            tools:layout_editor_absoluteY="306dp" />
+            tools:layout_editor_absoluteY="306dp"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -173,7 +177,8 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_location_detail"
             tools:layout_editor_absoluteX="52dp"
-            tools:layout_editor_absoluteY="306dp" />
+            tools:layout_editor_absoluteY="306dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/txt_description"
@@ -187,7 +192,8 @@
             android:textAppearance="@style/secondary_style"
             android:translationY="-1.44sp"
             tools:layout_editor_absoluteX="53dp"
-            tools:layout_editor_absoluteY="375dp" />
+            tools:layout_editor_absoluteY="375dp"
+            tools:ignore="MissingConstraints" />
 
         <View
             android:id="@+id/gradient_gallery"
@@ -197,7 +203,8 @@
             android:layout_alignParentTop="true"
             android:background="@drawable/some_id"
             tools:layout_editor_absoluteX="52dp"
-            tools:layout_editor_absoluteY="549dp" />
+            tools:layout_editor_absoluteY="549dp"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -205,7 +212,8 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_back"
             tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

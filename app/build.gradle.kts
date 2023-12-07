@@ -81,10 +81,6 @@ dependencies {
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
-    // Add ViewModel and LiveData dependencies
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
-
 
     //Hilt dependency injection
     implementation ("com.google.dagger:hilt-android:2.44.2")
@@ -95,6 +91,12 @@ dependencies {
     }
     //For easy logging
     implementation ("com.jakewharton.timber:timber:5.0.1")
+    //For data place holder display effect
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+    //For ViewModel and LiveData
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation ("androidx.fragment:fragment-ktx:1.6.2")
 
 
 }
