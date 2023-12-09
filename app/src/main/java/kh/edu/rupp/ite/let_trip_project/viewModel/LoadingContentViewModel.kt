@@ -6,13 +6,18 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStore
 import androidx.lifecycle.ViewModelStoreOwner
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class LoadingContentViewModel : ViewModel(), ViewModelStoreOwner {
+@HiltViewModel
+class LoadingContentViewModel @Inject constructor() : ViewModel(), ViewModelStoreOwner {
 
     private var errorMessage = MutableLiveData<String>()
     private var displayError = MutableLiveData<Boolean>()
     private var displayLoadingContentSkeleton = MutableLiveData(true)
     private var onRetryListener: () -> Unit = {}
+
+
     private   var LoadingContentViewModel =
         ViewModelProvider(this).get(LoadingContentViewModel::class.java)
     fun getErrorMessage(): LiveData<String> {
