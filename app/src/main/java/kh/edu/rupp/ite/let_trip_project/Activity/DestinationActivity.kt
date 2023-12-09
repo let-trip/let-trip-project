@@ -3,7 +3,7 @@ package kh.edu.rupp.ite.let_trip_project.Activity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import kh.edu.rupp.ite.let_trip_project.ViewModel.DestinationViewModel
+import kh.edu.rupp.ite.let_trip_project.viewModel.DestinationViewModel
 import kh.edu.rupp.ite.let_trip_project.databinding.ActivityDestinationBinding
 
 class DestinationActivity : AppCompatActivity() {

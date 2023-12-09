@@ -10,13 +10,13 @@ import androidx.annotation.LayoutRes
 import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kh.edu.rupp.ite.let_trip_project.ViewModel.LoadingContentViewModel
 import kh.edu.rupp.ite.let_trip_project.databinding.LayoutLoadingContentBinding
+import kh.edu.rupp.ite.let_trip_project.viewModel.LoadingContentViewModel
 
 class LoadingContentView (context: Context?, attrs:AttributeSet?) : RelativeLayout(context, attrs) {
 
     private lateinit var binding: LayoutLoadingContentBinding
-    private var viewModel: LoadingContentViewModel? = null
+    private var viewModel: LoadingContentViewModel?=null
     private var adapter: SkeletonAdapter? = null
     init {
         context?.let {
@@ -33,7 +33,7 @@ class LoadingContentView (context: Context?, attrs:AttributeSet?) : RelativeLayo
         itemDecoration: RecyclerView.ItemDecoration? = null
     ) {
         viewModel = inViewModel
-        binding.viewModel = viewModel
+//        binding.viewModel = viewModel
         binding.lifecycleOwner = findViewTreeLifecycleOwner()
         if (adapter == null) {
             adapter = SkeletonAdapter.createAdapter(itemSize, itemLayoutRes)
