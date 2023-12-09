@@ -8,7 +8,7 @@ import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import kh.edu.rupp.ite.let_trip_project.R
 import kh.edu.rupp.ite.let_trip_project.R.*
-import kh.edu.rupp.ite.let_trip_project.ViewModel.LoadingContentViewModel
+import kh.edu.rupp.ite.let_trip_project.viewModel.LoadingContentViewModel
 import kh.edu.rupp.ite.let_trip_project.databinding.FragmentHomeBinding
 import kh.edu.rupp.ite.let_trip_project.homescreen.viewModel.HomeViewModel
 import kh.edu.rupp.ite.let_trip_project.ui.fragment.BaseFragment

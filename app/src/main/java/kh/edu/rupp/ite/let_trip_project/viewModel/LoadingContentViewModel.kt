@@ -1,16 +1,20 @@
-package kh.edu.rupp.ite.let_trip_project.ViewModel
+package kh.edu.rupp.ite.let_trip_project.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelStore
+import androidx.lifecycle.ViewModelStoreOwner
 
-class LoadingContentViewModel : ViewModel() {
+class LoadingContentViewModel : ViewModel(), ViewModelStoreOwner {
 
     private var errorMessage = MutableLiveData<String>()
     private var displayError = MutableLiveData<Boolean>()
     private var displayLoadingContentSkeleton = MutableLiveData(true)
     private var onRetryListener: () -> Unit = {}
-
+    private   var LoadingContentViewModel =
+        ViewModelProvider(this).get(LoadingContentViewModel::class.java)
     fun getErrorMessage(): LiveData<String> {
         return errorMessage
     }
@@ -51,4 +55,7 @@ class LoadingContentViewModel : ViewModel() {
     fun isDisplayingAnyContent(): Boolean {
         return displayError.value == true || displayLoadingContentSkeleton.value == true
     }
+
+    override val viewModelStore: ViewModelStore
+        get() = TODO("Not yet implemented")
 }

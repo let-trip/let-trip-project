@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="kh.edu.rupp.ite.let_trip_project.ViewModel.LoadingContentViewModel" />
+            type="kh.edu.rupp.ite.let_trip_project.viewModel.LoadingContentViewModel" />
 
         <import type="android.view.View" />
     </data>

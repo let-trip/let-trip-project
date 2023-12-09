@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.let_trip_project.ViewModel
+package kh.edu.rupp.ite.let_trip_project.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

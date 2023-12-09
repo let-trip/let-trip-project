@@ -29,12 +29,14 @@
             android:id="@+id/img_banner"
             android:layout_width="336dp"
             android:layout_height="168dp"
+            android:layout_marginTop="13dp"
+            android:importantForAccessibility="no"
             android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:srcCompat="@drawable/img_angkorwat"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="77dp"
-            android:importantForAccessibility="no" />
+            tools:ignore="MissingConstraints" />
 
         <View
             android:id="@+id/gredient_banner"
@@ -42,10 +44,12 @@
             android:layout_height="168dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="77dp"
             android:background="@drawable/gradient_banner"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="77dp" />
+            app:layout_constraintEnd_toEndOf="@+id/img_banner"
+            app:layout_constraintStart_toStartOf="@+id/img_banner"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/txt_banner"
@@ -64,21 +68,24 @@
             android:id="@+id/indicator1"
             android:layout_width="8dp"
             android:layout_height="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="8dp"
             android:alpha="0.15"
             android:background="#1BA169"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="168dp"
-            tools:layout_editor_absoluteY="256dp" />
+            app:layout_constraintEnd_toStartOf="@+id/indicator2"
+            app:layout_constraintTop_toBottomOf="@+id/gredient_banner"
+            tools:ignore="MissingConstraints" />
 
         <View
             android:id="@+id/indicator2"
             android:layout_width="8dp"
             android:layout_height="8dp"
+            android:layout_marginTop="179dp"
             android:alpha="0.15"
             android:background="#1BA169"
+            app:layout_constraintTop_toTopOf="@+id/gredient_banner"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="181dp"
-            tools:layout_editor_absoluteY="256dp" />
+            tools:layout_editor_absoluteX="181dp" />
 
         <View
             android:id="@+id/indicator3"
@@ -115,44 +122,49 @@
             android:layout_height="158dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="208dp"
             android:background="@drawable/bg_product"
+            app:layout_constraintTop_toTopOf="@+id/gredient_banner"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="285dp" />
+            tools:layout_editor_absoluteX="38dp" />
 
         <ImageView
             android:id="@+id/img_destination"
             android:layout_width="157dp"
             android:layout_height="157dp"
+            android:layout_marginTop="208dp"
+            android:importantForAccessibility="no"
             android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@+id/gredient_banner"
             app:srcCompat="@drawable/img_kohnorea"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="285dp"
-            android:importantForAccessibility="no" />
+            tools:layout_editor_absoluteX="38dp" />
 
         <ImageView
             android:id="@+id/img_location"
             android:layout_width="14dp"
             android:layout_height="16dp"
+            android:layout_marginTop="127dp"
+            android:importantForAccessibility="no"
             android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="@+id/img_destination"
             app:srcCompat="@drawable/ic_location"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="46dp"
-            tools:layout_editor_absoluteY="412dp"
-            android:importantForAccessibility="no" />
+            tools:layout_editor_absoluteX="46dp" />
 
         <TextView
             android:id="@+id/txt_destination"
             android:layout_width="142dp"
             android:layout_height="20dp"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="99dp"
             android:gravity="top"
             android:text="@string/txt_destination"
             android:textAppearance="@style/secondary_txt"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="48dp"
-            tools:layout_editor_absoluteY="384dp" />
+            app:layout_constraintStart_toStartOf="@+id/img_destination"
+            app:layout_constraintTop_toTopOf="@+id/img_destination"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/txt_distance"
@@ -160,22 +172,24 @@
             android:layout_height="15dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="127dp"
             android:gravity="top"
             android:text="@string/txt_distance"
             android:textAppearance="@style/distance_style"
+            app:layout_constraintTop_toTopOf="@+id/img_destination"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="412dp" />
+            tools:layout_editor_absoluteX="67dp" />
 
         <ImageView
             android:id="@+id/bt_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="349dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
             app:srcCompat="@drawable/ic_back"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="16dp"
             tools:ignore="MissingConstraints"
-            android:importantForAccessibility="no" />
+            tools:layout_editor_absoluteY="16dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
