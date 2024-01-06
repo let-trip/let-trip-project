@@ -5,8 +5,9 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kh.edu.rupp.ite.let_trip_project.homescreen.api.CategoriesAPI
 import javax.inject.Inject
 
+
 class CategoriesRepository @Inject constructor(
-    @ApplicationContext private val context: Context, private val apiService: CategoriesAPI
+    @ApplicationContext private val context: Context
 ) {
     private var page = DEFAULT_PAGE
 
