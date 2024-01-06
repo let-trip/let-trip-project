@@ -7,7 +7,7 @@ import javax.inject.Inject
 
 
 class CategoriesRepository @Inject constructor(
-    @ApplicationContext private val context: Context, private val apiService: CategoriesAPI
+    @ApplicationContext private val context: Context
 ) {
     private var page = DEFAULT_PAGE
 

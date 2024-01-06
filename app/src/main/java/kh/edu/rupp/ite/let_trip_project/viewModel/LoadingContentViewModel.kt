@@ -62,5 +62,5 @@ class LoadingContentViewModel @Inject constructor() : ViewModel(), ViewModelStor
     }
 
     override val viewModelStore: ViewModelStore
-        get() = TODO("Not yet implemented")
+        get() = ViewModelStore()
 }
