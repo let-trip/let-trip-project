@@ -6,19 +6,13 @@
         android:icon="@drawable/ic_home"
         />
     <item
-        android:title="Search"
-        android:id="@+id/searchPage"
-        android:icon="@drawable/ic_search"
+        android:title="Account"
+        android:id="@+id/accountPage"
+        android:icon="@drawable/ic_account"
         />
     <item
-        android:title="Bag"
-        android:id="@+id/bagPage"
-        android:icon="@drawable/ic_bag"
+        android:title="More"
+        android:id="@+id/morePage"
+        android:icon="@drawable/ic_more"
         />
-    <item
-        android:title="Profile"
-        android:id="@+id/profilePage"
-        android:icon="@drawable/ic_profile"
-        />
-
 </menu>

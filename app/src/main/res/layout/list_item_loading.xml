@@ -5,7 +5,7 @@
     style="@style/Widget.Material3.CardView.Elevated"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:padding="@dimen/dimen_16dp">
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/progressBar"
@@ -20,7 +20,7 @@
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textViewError"
         style="@style/ErrorText"
-        android:text="failed_to_load_more_data"
+        android:text="@string/failed_to_load_more_data"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonRetry"
         style="@style/RetryButton"
-        android:text="Retry"
+        android:text="@string/retry"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
