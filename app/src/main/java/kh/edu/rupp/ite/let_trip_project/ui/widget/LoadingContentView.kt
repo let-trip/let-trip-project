@@ -10,14 +10,17 @@ import androidx.annotation.LayoutRes
 import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kh.edu.rupp.ite.let_trip_project.databinding.LayoutLoadingContentBinding
+import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import kh.edu.rupp.ite.let_trip_project.viewModel.LoadingContentViewModel
+import kh.edu.rupp.ite.let_trip_project.databinding.LayoutLoadingContentBinding
 
-class LoadingContentView (context: Context?, attrs:AttributeSet?) : RelativeLayout(context, attrs) {
+class LoadingContentView(context: Context?, attrs: AttributeSet?) : RelativeLayout(context, attrs) {
+
+    private var viewModel: LoadingContentViewModel? = null
+    private var adapter: SkeletonAdapter? = null
 
     private lateinit var binding: LayoutLoadingContentBinding
-    private var viewModel: LoadingContentViewModel?=null
-    private var adapter: SkeletonAdapter? = null
+
     init {
         context?.let {
             binding = LayoutLoadingContentBinding.inflate(
@@ -30,10 +33,10 @@ class LoadingContentView (context: Context?, attrs:AttributeSet?) : RelativeLayo
         inViewModel: LoadingContentViewModel,
         @LayoutRes itemLayoutRes: Int,
         itemSize: Int,
-        itemDecoration: RecyclerView.ItemDecoration? = null
+        itemDecoration: ItemDecoration? = null
     ) {
         viewModel = inViewModel
-//        binding.viewModel = viewModel
+        binding.viewModel = viewModel
         binding.lifecycleOwner = findViewTreeLifecycleOwner()
         if (adapter == null) {
             adapter = SkeletonAdapter.createAdapter(itemSize, itemLayoutRes)
@@ -45,24 +48,32 @@ class LoadingContentView (context: Context?, attrs:AttributeSet?) : RelativeLayo
         }
     }
 
+    fun hideView(runnable: () -> Unit) {
+        animate().alpha(0f).setDuration(500).withEndAction {
+            viewModel?.hideScreenLoadingOrError()
+            visibility = View.GONE
+            runnable.invoke()
+        }.start()
+    }
+
+    class SkeletonData
+
     private class SkeletonAdapter(
         private val data: List<SkeletonData>, @LayoutRes private val itemLayoutRes: Int
     ) : RecyclerView.Adapter<SkeletonAdapter.ViewHolder>() {
-        class SkeletonData
-
-
-        private class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val view = LayoutInflater.from(parent.context).inflate(itemLayoutRes, parent, false)
             return ViewHolder(view)
+        }
 
+        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         }
 
         override fun getItemCount() = data.size
 
-        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        }
+        private class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+
         companion object {
             fun createAdapter(itemSize: Int, itemLayoutRes: Int): SkeletonAdapter {
                 val data = arrayListOf<SkeletonData>()

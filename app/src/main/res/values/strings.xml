@@ -1,56 +1,30 @@
 <resources>
-    <string name="app_name">let-trip-project</string>
-    <!-- styles.xml -->
-    <style name="destination">
-        <item name="android:textSize">14sp</item>
-        <item name="android:letterSpacing">-0.01</item>
-        <item name="android:textColor">#FFFFFF</item>
-    </style>
+    <string name="app_name">AppTravel</string>
 
-    <string name="destination">
-        Destinations
-    </string>
+    <!--Error-->
+    <string name="failed_to_load_more_data">Failed to load more data</string>
+    <string name="retry">Retry</string>
+    <string name="error_code">ERROR: %1$s</string>
+    <string name="error_no_internet">No internet connection</string>
+    <string name="error_connect_server">Failed to connect to server</string>
+    <string name="error_general">There was an issue. Please try again or contact for support.</string>
+    <string name="error_no_data">No Data</string>
 
-    <string name="visit_angko">
-Visit ANGKOR WAT
-</string>
+    <!--Support Display Data Language-->
+    <string name="english">English</string>
+    <string name="taiwan">Taipei</string>
+    <string name="chinese">Chinese</string>
+    <string name="thai">Thai</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="spanish">Spanish</string>
+    <string name="japanese">Japanese</string>
+    <string name="korean">Korean</string>
 
-    <string name="txt_destination">
-Koh Norea Island
-</string>
+    <!--    Attraction Place Detail Screen-->
+    <string name="display_address_template">Address\n%1$s</string>
+    <string name="display_last_modified_date_template">Last Update Time\n%1$s</string>
+    <string name="display_language">Display Language</string>
 
-    <string name="txt_distance">
-7.2 km away
-</string>
-    <string name="siem_reap_c">
-Siem Reap, Cambodia
-</string>
-
-    <string name="the_archite">
-The architecture and layout of the successive capitals bear witness to a high level of social order and ranking within the Khmer Empire. Angkor is therefore a major site exemplifying cultural, religious and symbolic values, as well as containing high architectural, archaeological and artistic significance.
-</string>
-
-    <string name="titleToolBar">Home</string>
-
-    <string name="embark">Embark </string>
-    <string name="on_your">on Your</string>
-    <string name="world">World</string>
-    <string name="adventure">Adventure :</string>
-    <string name="discover">Discover, </string>
-    <string name="explore">Explore,</string>
-    <string name="unwind">Unwind!</string>
-    <string name="explore_btn">Explore</string>
-
-    <!-- strings.xml -->
-    <string name="embark_on_y">
-        Embark on Your \nWorld Adventure : \nDiscover, Explore, \nUnwind!
-    </string>
-
-    <string name="welcome">Welcome to Let’s Trip</string>
-    <string name="explor_signup">Explore The World With Every Step of the Way!</string>
-    <string name="categories">Category</string>
-    <string name="view_all">View All</string>
-    <string name="near_you">Near You</string>
-    <string name="popular_destination">Popular Destination</string>
-    >>>>>>> cf0cbf6b905cf80c0a972b0378e171605beba98e
+    <string name="txt_logo">Enjoy your time</string>
 </resources>

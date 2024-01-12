@@ -1,37 +1,30 @@
+import org.apache.tools.ant.util.JavaEnvUtils.VERSION_1_8
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
     id ("kotlin-kapt")
     id ("com.google.dagger.hilt.android")
     id ("kotlin-parcelize")
 }
 
 android {
-    namespace = "kh.edu.rupp.ite.let_trip_project"
-    compileSdk = 34
-    packagingOptions {
-        exclude ("META-INF/AL2.0")
-        exclude ("META-INF/LGPL2.1")
-        exclude ("xsd/catalog.xml")
-        exclude ("META-INF/DEPENDENCIES")
-        exclude ("META-INF/LICENSE.md")
-        exclude ("META-INF/NOTICE.md")
-        exclude ("META-INF/META-INF/io.netty.versions.properties")
-        exclude ("META-INF/io.netty.versions.properties")
-        exclude ("META-INF/INDEX.LIST")
-
+    namespace = "com.example.apptravel"
+    compileSdk = 33
+    kotlin {
+        jvmToolchain(18)
     }
+
     defaultConfig {
-        applicationId = "kh.edu.rupp.ite.let_trip_project"
-        minSdk = 26
-        targetSdk = 34
+        applicationId = "com.example.apptravel"
+        minSdk = 24
+        //noinspection OldTargetApi
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
-        multiDexEnabled = true
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        viewBinding {
-            enable = true
-        }
     }
 
     buildTypes {
@@ -48,58 +41,67 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "18"
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
         dataBinding = true
         buildConfig = true
-
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
     }
 }
 kapt {
-    correctErrorTypes = true
+    var correctErrorTypes = true
 }
-
-
-
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.10.0")
+    implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.android.support:support-annotations:28.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    //Retrofit http logging
-    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.1")
+    //For serialization and deserialization data with API
+    implementation ("com.google.code.gson:gson:2.10.1")
 
-    // Add Retrofit dependencies
+    //For ViewModel and LiveData
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+    implementation ("androidx.fragment:fragment-ktx:1.6.1")
+
+    //Coroutine
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+
+    //Retrofit2
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
+    //Retrofit http logging
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.1")
 
     //Hilt dependency injection
     implementation ("com.google.dagger:hilt-android:2.44.2")
     kapt ("com.google.dagger:hilt-compiler:2.47")
-    implementation ("androidx.activity:activity-ktx:1.8.1")
-    implementation ("com.android.tools.build:gradle:7.1.0") {
-        exclude(group = "jakarta.activation", module = "jakarta.activation-api")
-    }
-    //For easy logging
-    implementation ("com.jakewharton.timber:timber:5.0.1")
+
+    //For image loading
+    implementation ("com.github.bumptech.glide:glide:4.15.1")
+
     //For data place holder display effect
     implementation ("com.facebook.shimmer:shimmer:0.5.0")
-    //For ViewModel and LiveData
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation ("androidx.fragment:fragment-ktx:1.6.2")
 
+    //For pull and refresh action
+    implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
+
+    //For easy logging
+    implementation ("com.jakewharton.timber:timber:5.0.1")
+
+    //Splash screen
+    implementation ("androidx.core:core-splashscreen:1.0.1")
 
 }
+
+
 
 

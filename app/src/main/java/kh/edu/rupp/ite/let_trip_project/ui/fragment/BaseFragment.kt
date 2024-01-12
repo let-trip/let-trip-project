@@ -8,17 +8,14 @@ import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.MaterialToolbar
 
-abstract class BaseFragment <B : ViewDataBinding> : Fragment() {
+abstract class BaseFragment<B : ViewDataBinding> : Fragment() {
 
     protected lateinit var binding: B
-
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         binding = inflateLayout(layoutInflater, container)
-        if (isRegisterForNavigationBackButtonClickEvent() && getToolbar() !=null) getToolbar()?.run {
+        if (isRegisterForNavigationBackButtonClickEvent() && getToolbar() != null) getToolbar()?.run {
             this.setNavigationOnClickListener {
                 requireActivity().finish()
             }
@@ -42,6 +39,4 @@ abstract class BaseFragment <B : ViewDataBinding> : Fragment() {
             title = tile
         }
     }
-
-
 }
