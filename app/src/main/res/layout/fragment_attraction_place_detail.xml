@@ -5,7 +5,7 @@
 
     <data>
 
-        <import type="com.example.apptravel.R" />
+        <import type="kh.edu.rupp.ite.let_trip_project.R" />
 
         <import type="android.view.View" />
 

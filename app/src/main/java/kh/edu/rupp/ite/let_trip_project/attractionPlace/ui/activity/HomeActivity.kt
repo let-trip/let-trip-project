@@ -48,11 +48,15 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>() {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.root_view, HomeFragment()).commit()
             }
-            R.id.morePage -> {
+//            R.id.searchPage -> {
+//                supportFragmentManager.beginTransaction()
+//                    .replace(R.id.root_view, AccountFragment()).commit()
+//            }
+            R.id.bagPage -> {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.root_view, MoreFragment()).commit()
             }
-            R.id.accountPage -> {
+            R.id.profilePage -> {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.root_view, AccountFragment()).commit()
             }

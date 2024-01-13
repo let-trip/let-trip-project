@@ -9,7 +9,7 @@ import retrofit2.http.Query
 
 interface AttractionPlaceAPI {
 
-    @GET("api/en/Attractions/All")
+    @GET("{lang}/Attractions/All")
     suspend fun getAttractionPlace(
         @Path("lang") languageCode: String, @Query("page") page: Int
     ): Response<BaseAPIResponse<List<AttractionPlace>>>

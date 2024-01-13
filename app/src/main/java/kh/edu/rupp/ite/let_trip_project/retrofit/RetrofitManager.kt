@@ -17,7 +17,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object RetrofitManager {
 
-    private const val BASE_URL = "http://aws.mekmunsopheaktra.com:8000/"
+    private const val BASE_URL = "https://www.travel.taipei/open-api/"
 
     @Provides
     @Singleton

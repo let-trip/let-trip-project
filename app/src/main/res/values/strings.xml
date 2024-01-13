@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppTravel</string>
+    <string name="app_name">Let trip</string>
 
     <!--Error-->
     <string name="failed_to_load_more_data">Failed to load more data</string>

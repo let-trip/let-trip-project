@@ -10,17 +10,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.apptravel"
-    compileSdk = 33
-    kotlin {
-        jvmToolchain(18)
-    }
+    namespace = "kh.edu.rupp.ite.let_trip_project"
+    compileSdk = 34
+
 
     defaultConfig {
-        applicationId = "com.example.apptravel"
+        applicationId = "kh.edu.rupp.ite.let_trip_project"
         minSdk = 24
-        //noinspection OldTargetApi
-        targetSdk = 33
+        //noinspection EditedTargetSdkVersion,OldTargetApi
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -37,8 +35,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_18
+        targetCompatibility = JavaVersion.VERSION_18
     }
     kotlinOptions {
         jvmTarget = "18"
@@ -53,10 +51,10 @@ kapt {
     var correctErrorTypes = true
 }
 dependencies {
-
-    implementation("androidx.core:core-ktx:1.10.1")
+implementation("androidx.activity:activity-ktx:1.8.2")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.android.support:support-annotations:28.0.0")
     testImplementation("junit:junit:4.13.2")
@@ -66,9 +64,9 @@ dependencies {
     implementation ("com.google.code.gson:gson:2.10.1")
 
     //For ViewModel and LiveData
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
-    implementation ("androidx.fragment:fragment-ktx:1.6.1")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation ("androidx.fragment:fragment-ktx:1.6.2")
 
     //Coroutine
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
@@ -82,8 +80,8 @@ dependencies {
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.1")
 
     //Hilt dependency injection
-    implementation ("com.google.dagger:hilt-android:2.44.2")
-    kapt ("com.google.dagger:hilt-compiler:2.47")
+    implementation ("com.google.dagger:hilt-android:2.50")
+    kapt ("com.google.dagger:hilt-compiler:2.50")
 
     //For image loading
     implementation ("com.github.bumptech.glide:glide:4.15.1")
